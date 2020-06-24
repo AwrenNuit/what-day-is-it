@@ -36,7 +36,7 @@ p {
 }
 
 #main-container::before {
-  background-color: #000;
+  background-color: #f8c0ff;
   border-radius: 50%;
   content: "";
   height: 25px;
@@ -48,7 +48,8 @@ p {
 }
 
 #clock-hand {
-  border: 3px solid #000;
+  animation: spin 3s;
+  border: 3px solid #f8c0ff;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -58,8 +59,8 @@ p {
 }
 
 #clock-hand::before {
-  border-top: 6px solid #000;
-  border-right: 6px solid #000;
+  border-top: 6px solid #f8c0ff;
+  border-right: 6px solid #f8c0ff;
   content: "";
   height: 15px;
   left: 101px;
@@ -141,4 +142,10 @@ p {
 
 #sun.active ~ #clock-hand {
   transform: rotate(217deg);
+}
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(-720deg); }
 }
