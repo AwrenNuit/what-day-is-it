@@ -8,7 +8,7 @@ function getDayOfWeek() {
 
 function setPointerToToday() {
   for(let day of document.getElementsByTagName('p')) {
-    if(day.innerHTML === today) {
+    if(day.innerHTML === today.substr(0, 3)) {
       day.classList.add('active');
     }
   }

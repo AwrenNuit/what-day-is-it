@@ -56,7 +56,7 @@ p {
   top: 50%;
   transform: translateY(-50%);
   transform-origin: left;
-  width: 100px;
+  width: 120px;
 }
 
 #clock-hand::before {
@@ -64,7 +64,7 @@ p {
   border-right: 6px solid #000;
   content: "";
   height: 15px;
-  left: 81px;
+  left: 101px;
   position: absolute;
   top: -10px;
   transform: rotate(45deg);
@@ -87,9 +87,17 @@ p {
   transform: translateX(-50%);
 }
 
+#mon.active ~ #clock-hand {
+  transform: rotate(270deg);
+}
+
 #tue {
   left: 315px;
   top: 60px;
+}
+
+#tue.active ~ #clock-hand {
+  transform: rotate(320deg);
 }
 
 #wed {
@@ -97,9 +105,17 @@ p {
   top: 200px;
 }
 
+#wed.active ~ #clock-hand {
+  transform: rotate(13deg);
+}
+
 #thu {
   left: 255px;
   top: 320px;
+}
+
+#thu.active ~ #clock-hand {
+  transform: rotate(63deg);
 }
 
 #fri {
@@ -107,12 +123,24 @@ p {
   top: 320px;
 }
 
+#fri.active ~ #clock-hand {
+  transform: rotate(117deg);
+}
+
 #sat {
   left: 20px;
   top: 200px;
 }
 
+#sat.active ~ #clock-hand {
+  transform: rotate(167deg);
+}
+
 #sun {
   left: 45px;
   top: 60px;
+}
+
+#sun.active ~ #clock-hand {
+  transform: rotate(217deg);
 }
