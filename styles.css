@@ -82,27 +82,28 @@ p {
 }
 
 #mon {
-  left: 160px;
+  left: 50%;
   top: -10px;
+  transform: translateX(-50%);
 }
 
 #tue {
-  left: 280px;
-  top: 75px;
+  left: 315px;
+  top: 60px;
 }
 
 #wed {
-  left: 270px;
+  left: 335px;
   top: 200px;
 }
 
 #thu {
-  left: 210px;
+  left: 255px;
   top: 320px;
 }
 
 #fri {
-  left: 100px;
+  left: 105px;
   top: 320px;
 }
 
@@ -112,6 +113,6 @@ p {
 }
 
 #sun {
-  left: 40px;
-  top: 75px;
+  left: 45px;
+  top: 60px;
 }
