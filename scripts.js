@@ -1,15 +1,15 @@
-const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-let today = '';
+const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let today = "";
 
 function getDayOfWeek() {
   const date = new Date().getDay();
-  return today = days[date];
+  return (today = days[date]);
 }
 
 function setPointerToToday() {
-  for(let day of document.getElementsByTagName('p')) {
-    if(day.innerHTML === today.substr(0, 3)) {
-      day.classList.add('active');
+  for (let day of document.getElementsByTagName("p")) {
+    if (day.innerHTML === today) {
+      day.classList.add("active");
     }
   }
 }
