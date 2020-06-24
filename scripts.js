@@ -6,4 +6,13 @@ function getDayOfWeek() {
   return today = days[date];
 }
 
+function setPointerToToday() {
+  for(let day of document.getElementsByTagName('p')) {
+    if(day.innerHTML === today) {
+      day.classList.add('active');
+    }
+  }
+}
+
 getDayOfWeek();
+setPointerToToday();
