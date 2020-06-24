@@ -1,10 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #27222e;
+  color: #fff;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+h1 {
+  background-clip: text;
+  background-color: #f8c0ff;
+  color: transparent;
+  font-size: 3rem;
+  margin: 60px 0;
+  text-align: center;
+  text-shadow: 5px 5px #f5a7ff98, 10px 10px #f186ff50;
+}
+
 p {
   font-size: 24px;
+  margin: 24px 0;
 }
 
 #main-container {
-  border: 3px solid #000;
+  /* border: 3px solid #000; */
   border-radius: 50%;
+  box-shadow: 0 0 10px 4px #f8c0ff;
   height: 400px;
   margin: 0 auto;
   position: relative;
@@ -14,7 +37,7 @@ p {
 #main-container::before {
   background-color: #000;
   border-radius: 50%;
-  content: '';
+  content: "";
   height: 25px;
   left: 50%;
   position: absolute;
@@ -23,7 +46,35 @@ p {
   transform: translate(-50%, -50%);
 }
 
-#mon, #tue, #wed, #thu, #fri, #sat, #sun {
+#clock-hand {
+  border: 3px solid #000;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left;
+  width: 100px;
+}
+
+#clock-hand::before {
+  border-top: 6px solid #000;
+  border-right: 6px solid #000;
+  content: "";
+  height: 15px;
+  left: 81px;
+  position: absolute;
+  top: -10px;
+  transform: rotate(45deg);
+  width: 15px;
+}
+
+#mon,
+#tue,
+#wed,
+#thu,
+#fri,
+#sat,
+#sun {
   position: absolute;
 }
 
