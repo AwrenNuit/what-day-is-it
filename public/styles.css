@@ -144,13 +144,12 @@ p {
   transform: rotate(217deg);
 }
 
-
 @keyframes spin {
   from { transform: rotate(0deg); }
   from { transform: rotate(-720deg); }
 }
 
-@media(max-width: 480px) {
+@media (max-width: 480px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -163,7 +162,7 @@ p {
   #clock-hand {
     width: 70px;
   }
-  
+
   #clock-hand::before {
     height: 15px;
     left: 51px;
@@ -173,22 +172,22 @@ p {
   #mon {
     top: -15px;
   }
-  
+
   #tue {
     left: 210px;
     top: 40px;
   }
-  
+
   #wed {
     left: 220px;
     top: 130px;
   }
-  
+
   #thu {
     left: 170px;
     top: 205px;
   }
-  
+
   #fri {
     left: 70px;
     top: 205px;
@@ -198,7 +197,7 @@ p {
     left: 15px;
     top: 130px;
   }
-  
+
   #sun {
     left: 30px;
     top: 40px;

@@ -3,7 +3,7 @@ let today = "";
 
 function getDayOfWeek() {
   const date = new Date().getDay();
-  return (today = days[date]);
+  today = days[date];
 }
 
 function setPointerToToday() {
