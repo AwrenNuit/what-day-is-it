@@ -4,7 +4,7 @@
 
 Do you find yourself wondering what day it is? Have you ever thought it was a different day than it actually was? Wait until you hear about WHAT DAY IS IT?! All of your problems are at an end. Feel the comforting embrace that only insider knowledge of what day of the week it is can bring.
 
-Find your inner peace [HERE](https://omg-what-day-is-it.web.app/).
+Find your inner peace.
 
 ## Screenshots
 
